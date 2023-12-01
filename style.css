@@ -34,7 +34,7 @@ nav {
 }
 
 .limitedOffer {
-  font-size: 20px;
+  font-size: 1.25rem;
   border-bottom: 2px solid green;
   cursor: pointer;
 }
@@ -88,7 +88,7 @@ nav {
   top: 10%;
   right: 10%;
   color: white;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 900;
   text-align: center;
   z-index: 1;
@@ -99,7 +99,7 @@ nav {
   top: 10%;
   left: 10%;
   color: white;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 300;
   text-align: center;
   border: 1px solid gray;
@@ -111,7 +111,7 @@ nav {
   top: 50%;
   right: 10%;
   color: white;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 900;
   border: 1px solid gray;
   background-color: black;
@@ -162,4 +162,105 @@ nav {
 
 .sliderItem:nth-child(5) .sliderPrice {
   color: cornsilk;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.featureIcon{
+  width: 50px;
+  height: 50px;
+}
+
+.featureTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.featureDesc {
+  color: gray;
+  width: 50%;
+  height: 100px;
+}
+
+.product {
+  height: 100vh;
+  background-color: whitesmoke;
+  position: relative;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.productImg {
+  width: 50%;
+}
+
+.productDetails {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 40%;
+  padding: 50px;
+}
+
+.productTitle {
+  font-size: 4.688rem;
+  font-weight: 900;
+}
+
+.productDesc {
+  font-size: 1.1rem;
+  color: gray;
+}
+
+.colors, .sizes {
+  display: flex;
+  margin-bottom: 20px;
+
+}
+
+.color {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: black;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.color:last-child {
+  background-color: darkblue;
+}
+
+.size {
+  padding: 5px 20px;
+  border: 1px solid black;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.productButton {
+  float: right;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.productButton:hover {
+  background-color: white;
+  color: black;
 }
